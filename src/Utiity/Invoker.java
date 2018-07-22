@@ -9,11 +9,13 @@ public class Invoker {
 		
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\SELENIUM_WORKSPACE\\chromedriver.exe");
+				"D:\\Books\\chromedriver.exe");
 		driver = new ChromeDriver();
 		//driver.manage().window().maximize();
 		// TODO Auto-generate  commethod stub
 		driver.get("google.com");
+		System.out.println("Google launched!!");
+		driver.quit();
 
 	}
 
