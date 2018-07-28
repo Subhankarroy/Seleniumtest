@@ -5,17 +5,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Invoker {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Books\\chromedriver.exe");
+				"D:\\SELENIUM_WORKSPACE\\chromedriver.exe");
 		driver = new ChromeDriver();
-		//driver.manage().window().maximize();
-		// TODO Auto-generate  commethod stub
-		driver.get("google.com");
-		System.out.println("Google launched!!");
+		driver.get("https://authvchnform.cognizant.com/vpn/tmindex.html");
+		Thread.sleep(2000);
+		String title=driver.getTitle();
+		System.out.println(title);	
+		System.out.println("We are Launched!!");
 		driver.quit();
+        System.out.println("Browser Closed Successully");
 
 	}
 
