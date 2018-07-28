@@ -18,6 +18,7 @@ public class Invoker {
 		System.out.println("We are Launched!!");
 		driver.quit();
         System.out.println("Browser Closed Successully");
+        System.out.println("get it from github");
 
 	}
 
